@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="utility.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container flex">
+    <div class="left">
+      <div class="home">
+        <div class="close">
+          <img src="./Assests/cross.svg" alt="cross icon" />
+        </div>
+        <div class="logo">
+          <img src="./Assests/logo.svg" alt="" />
+          <h2>Spotify</h2>
+        </div>
+        <ul>
+          <li><img src="./Assests/home.svg" alt="home icon" />Home</li>
+          <li><img src="./Assests/search.svg" alt="search icon" />Search</li>
+        </ul>
+      </div>
+
+      <div class="library">
+        <div class="heading">
+          <img src="./Assests/library.svg" alt="library icon" />
+          <h4>Your Library</h4>
+        </div>
+
+        <div class="songList">
+          <ul></ul>
+        </div>
+
+        <div class="footer">
+          <div>
+            <a href="https://www.spotify.com/us/legal/"><span>Legal</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/us/privacy/"><span>Privacy Center</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/us/legal/privacy-policy/"><span>Privacy Policy</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/us/legal/cookies-policy/"><span>Cookies</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/us/legal/privacy-policy/#s3"><span>About Ads</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/us/accessibility/"><span>Accessibility</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="header">
+        <div class="nav">
+          <div class="hamburger">
+            <img src="./Assests/hamburger.svg" alt="hamburger icon" />
+          </div>
+
+          <div class="angle-icons">
+            <img src="./Assests/angle-left.png" alt="left icon" class="left-angle" />
+            <img src="./Assests/angle-right.png" alt="right icon" class="right-angle" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn" id="btn1">Sign up</button>
+          <button class="btn" id="btn2">Log in</button>
+        </div>
+      </div>
+      <div class="playlists">
+        <h1>Popular albums and singles</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/sanam-teri-kasam.jpeg" alt="sanam teri kasam song image" class="card-img" />
+            <h3>Sanam Teri Kasam</h3>
+            <p>Himesh Reshamiya, Sameer Anjaan, Subrat Sinha</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/aashiqui2.jpeg" alt="aashiqui2 song image" class="card-img" />
+            <h3>Aashiqui 2</h3>
+            <p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/yeh-jawaani-hai-deewani.jpeg" alt="yeh jawaani hai deewani song image"
+              class="card-img" />
+            <h3>yeh Jawaani Hai Deewani</h3>
+            <p>Pritam</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/glory.jpeg" alt="Glory song image" class="card-img" />
+            <h3>Glory</h3>
+            <p>Yo Yo Honey Singh</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/muse.jpeg" alt="who (remixes) song image" class="card-img" />
+            <h3>Who(Remixes)</h3>
+            <p>Jimin</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/mismatched.jpeg" alt="mismatched song image" class="card-img" />
+            <h3>Mismatched:Season 3</h3>
+            <p>Mismatched-Cast</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/shubh.jpeg" alt="Sicario song image" class="card-img" />
+            <h3>Sicario</h3>
+            <p>Shubh</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/karan.jpeg" alt="making memories song image" class="card-img" />
+            <h3>Making Memories</h3>
+            <p>Karan Aujla, Ikky</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/arijit.jpeg" alt="arijit sing's song image" class="card-img" />
+            <h3>Unlimited Love Songs-Arijit Singh</h3>
+            <p>Arjit Singh</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/sahiba.jpeg" alt="sahiba song image" class="card-img" />
+            <h3>Sahiba</h3>
+            <p>Jasleen Royal, Stebin Ben, Vijay Deverakonda</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/hurry-up-tomorrow.jpeg" alt="hurry up tomorrow song image" class="card-img" />
+            <h3>Hurry Up Tomorrow</h3>
+            <p>The Weekend</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/anuv.jpeg" alt="anuv song image" class="card-img" />
+            <h3>Jo Tum Mere Ho</h3>
+            <p>Anuv Jain</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/moose-tape.jpeg" alt="moosetape song image" class="card-img" />
+            <h3>Moosetape</h3>
+            <p>Sidhu Moose Wala</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/raanjhan.jpeg" alt="raanjhan song image" class="card-img" />
+            <h3>Rahjhan(From "Do Patti")</h3>
+            <p>Sachet-Parampara, Parampara Tandon, Kausar Munir</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/hamari-adhuri-kahani.jpeg" alt="hamari adhuri kahani song image" class="card-img" />
+            <h3>Hamari Adhuri Kahani</h3>
+            <p>Jeet Gannguli, Mithoon, Ami Mis</p>
+          </div>
+        </div>
+
+        <h1 class="other-playlists">Popular radio</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/arijit-singh-radio.jpeg" alt="arijit singh radio image" class="card-img" />
+            <h3>With Sachin-Jigar, Amit Trivedi, Mithoon and more</h3>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/diljit.jpeg" alt="diljit dosanjh radio image" class="card-img" />
+            <h3>With Karan Aujla, Shubh, Badshah and more</h3>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/kk.jpeg" alt="kk radio image" class="card-img" />
+            <h3>With Armaan Malik, Pritam, Ankit Tiwari and more</h3>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/shreya.jpeg" alt="shreya ghoshal radio image" class="card-img" />
+            <h3>With A.R. Rahman, Vishal-Shekhar, Atif Aslam and more</h3>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/gv.jpeg" alt="G.V. Prakash radio image" class="card-img" />
+            <h3>With Harris Jayaraj, Anirudh, Ravichander, Hiphop...</h3>
+
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/ar-rahman.jpeg" alt="A.R. Rahman radio image" class="card-img" />
+            <h3>With Anirudh Ravichander, Harris Jayaraj, Yuvan...</h3>
+
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/lata.jpeg" alt="lata mangeshkar radio image" class="card-img" />
+            <h3>With Mohammad Rafi, Kishore Kumar, Mukesh and...</h3>
+
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/kumar.jpeg" alt="kumar sanu radio image" class="card-img" />
+            <h3>With Asha Bhosle, Anuradha Paudwal, Abhijeet and more</h3>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/yoyo.jpeg" alt="yo-yo honey sing radio image" class="card-img" />
+            <h3>With Badshah, Diljit Dosanjh, Harrdy Sandhu and more</h3>
+
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/alka.jpeg" alt="alka yagnik image" class="card-img" />
+            <h3>With Abhijeet, Kumar Sanu, Jatin-Lalit and more</h3>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/atif.jpeg" alt="atif aslam radio image" class="card-img" />
+            <h3>With Sachin-Jigar, Sachet Tandon, Darshan Raval and...</h3>
+
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/udit.jpeg" alt="moosetape song image" class="card-img" />
+            <h3>With Abhijeet, Kavita Krishnamurthy, Uttam Sing...</h3>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/sidhu.jpeg" alt="sidhu moose wala radio image" class="card-img" />
+            <h3>With Varinder Brar, Karan Aujla, Shubh and more</h3>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/rafi.jpeg" alt="mohammad rafi radio image" class="card-img" />
+            <h3>With Mukesh, Geeta Dutt, Asha Bhosle and more</h3>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/kishore.jpeg" alt="kishore kumar radio image" class="card-img" />
+            <h3>With Mukesh, Lata Mangeshkar, Tabassum an...</h3>
+          </div>
+        </div>
+
+        <h1 class="other-playlists">Featured Charts</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/top-songs-global.jpg" alt="top songs global image" class="card-img" />
+            <p>Your weekly update of the most played tracks right...</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/top-songs-india.jpg" alt="top songs india image" class="card-img" />
+            <p>Your weekly update of the most played tracks right...</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/top-50-global.jpg" alt="top 50 songs global image" class="card-img" />
+            <p>Your daily update of the most played tracks right...</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/top-50-india.jpg" alt="top 50 songs india image" class="card-img" />
+            <p>Your daily update of the most played tracks right...</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <img src="./Assests/play-hover.svg" alt="" />
+            </div>
+            <img src="./Assests/viral-50-global.jpg" alt="viral 50 songs india image" class="card-img" />
+            <p>Your daily update of the most played tracks right...</p>
+
+          </div>
+        </div>
+
+        <div class="playbar">
+          <div class="progress-bar">
+            <div class="circle"></div>
+          </div>
+
+          <div class="song-info">
+            <div class="song-track"></div>
+            <div class="song-buttons">
+              <img src="./Assests/prev.svg" alt="previous song icon" id="previous" />
+              <img src="./Assests/play.svg" alt="play song icon" id="play" />
+              <img src="./Assests/next.svg" alt="next song icon" id="next" />
+            </div>
+          </div>
+          <div>
+            <div class="song-duration"></div>
+            <div class="volume">
+              <div class="vol">
+                <img src="./Assests/volume.svg" alt="volume icon" />
+              </div>
+              <div class="range">
+                <input type="range" name="volume" id="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
